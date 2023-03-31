@@ -193,7 +193,7 @@ function sendEmail(){
   //   Body: "and this is the body",
   // }).then((message) => alert(message));
   Email.send({
-    SecureToken: "f2eab76e-e95e-4468-bf54-429a4df16555",
+    SecureToken: "58dbaaed-0a99-440c-b000-3d3c5b4e2564",
     To: "mohamed.mounir2425@gmail.com",
     From: document.getElementById("user_email").value,
     // From: "mmano1493@gmail.com",
