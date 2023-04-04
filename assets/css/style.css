@@ -701,7 +701,7 @@ input {
 }
 /*===== Services Section =====*/
 .services__container {
-  grid-template-columns: repeat(3, 250px);
+  grid-template-columns: repeat(1, 250px);
   justify-content: center;
   column-gap: 1.8rem;
 }
@@ -1204,7 +1204,7 @@ textarea.input {
     grid-template-columns: 330px;
   }
   .services__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
   .services__content {

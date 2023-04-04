@@ -176,28 +176,28 @@ inputs.forEach((input)=>{
 
 /*=============== send email ===============*/
 
-function sendEmail(){
-  var name = document.getElementById('user_name').value
-  var email = document.getElementById("user_email").value;
-  var subject = document.getElementById("user_subject").value;
-  var msg = document.getElementById("user_msg").value;
-  var body = `name: ${name} <br/> email: ${email} <br/> subject: ${subject} <br/> message: ${msg} `;
+// function sendEmail(){
+//   var name = document.getElementById('user_name').value
+//   var email = document.getElementById("user_email").value;
+//   var subject = document.getElementById("user_subject").value;
+//   var msg = document.getElementById("user_msg").value;
+//   var body = `name: ${name} <br/> email: ${email} <br/> subject: ${subject} <br/> message: ${msg} `;
 
-  // Email.send({
-  //   Host: "smtp.gmail.com",
-  //   Username: "mohamed.mounir2425@gmail.com",
-  //   Password: "47E36C512879BB686059350BC8672A142F5B",
-  //   To: "mohamed.mounir2425@gmail.com",
-  //   From: document.getElementById("user_email").value,
-  //   Subject: "new contact form enquiry",
-  //   Body: "and this is the body",
-  // }).then((message) => alert(message));
-  Email.send({
-    SecureToken: "58dbaaed-0a99-440c-b000-3d3c5b4e2564",
-    To: "mohamed.mounir2425@gmail.com",
-    From: document.getElementById("user_email").value,
-    // From: "mmano1493@gmail.com",
-    Subject: "This is the subject",
-    Body: body,
-  }).then((message) => alert(message));
-}
+//   // Email.send({
+//   //   Host: "smtp.gmail.com",
+//   //   Username: "mohamed.mounir2425@gmail.com",
+//   //   Password: "47E36C512879BB686059350BC8672A142F5B",
+//   //   To: "mohamed.mounir2425@gmail.com",
+//   //   From: document.getElementById("user_email").value,
+//   //   Subject: "new contact form enquiry",
+//   //   Body: "and this is the body",
+//   // }).then((message) => alert(message));
+//   Email.send({
+//     SecureToken: "224180af-cae0-463f-bab4-c00e8d8dcadb",
+//     To: "mohamed.mounir2425@gmail.com",
+//     // From: document.getElementById("user_email").value,
+//     From: "mmano1493@gmail.com",
+//     Subject: "This is the subject",
+//     Body: body,
+//   }).then((message) => alert(message));
+// }
