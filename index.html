@@ -678,6 +678,7 @@
               </ul>
             </div>
           </div>
+         
           <div class="work__card mix web">
             <img src="assets/img/projectsPic/movie.png" alt="" class="work__img" />
             <h3 class="work__title">Noxe Movie Website</h3>
@@ -722,6 +723,34 @@
               </ul>
             </div>
           </div>
+
+          <div class="work__card mix web">
+            <!-- <img src="assets/img/projectsPic/OrganicFood.png" alt="" class="work__img" /> -->
+            <img src="assets/img/projectsPic/socialApp.png" alt="" class="work__img" />
+            <h3 class="work__title">Social App</h3>
+            <span class="work__button"
+              >Demo
+              <i class="uil uil-arrow-right work__button-icon"></i>
+            </span>
+            <div class="portfolio__item-details">
+              <h3 class="details__title">Web Application</h3>
+              <p class="details__description">
+                This simple website about social media  
+              </p>
+              <ul class="details__info">
+                <li>Created - <span>21 May 2023</span></li>
+                <li>Technologies - <span>React js</span></li>
+                <li>Role - <span>frontend</span></li>
+                <li>
+                  View - <span><a href="https://youtu.be/mMXBbWApyD0" target="_blank">YouTube</a></span>
+                </li>
+                <li>
+                  Live - <span><a href="https://mohamedmounir2425.github.io/Social-App/" target="_blank">Github</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div class="work__card mix mob">
             <img src="assets/img/projectsPic/orgApp.png" alt="" class="work__img" />
             <h3 class="work__title">Organic Products Mob-app</h3>
@@ -1166,7 +1195,7 @@
           </div>
 
           <div class="contact__content">
-            <form action="https://formsubmit.co/mohamed.mounir2425@email.com" method="POST" >
+            <form id="contact__content" action="https://formsubmit.co/mohamed.mounir2425@email.com" method="POST" >
               <div class="input__container">
                 <input type="text" class="input" id="user_name" required/>
                 <label for="">Username</label>
@@ -1178,18 +1207,18 @@
                 <label for="">E-Mail</label>
                 <span>E-Mail</span>
               </div>
-              <div class="input__container">
+              <!-- <div class="input__container">
                 <input type="text" class="input" id="user_subject" required/>
                 <label for="">Subject</label>
                 <span>Subject</span>
-              </div>
+              </div> -->
               <div class="input__container textarea">
                 <textarea id="user_msg" required class="input"></textarea>
                 <label for="">Message</label>
                 <span>Message</span>
               </div>
 
-              <button type="submit" class="button" >
+              <button type="submit" id="submitBtn" class="button" >
                 <i class="uil uil-navigator button__icon"></i>Send Message
               </button>
             </form>
@@ -1254,6 +1283,10 @@
 
     <!--========== SWIPER JS ==========-->
     <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
 
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>

@@ -177,10 +177,56 @@ inputs.forEach((input)=>{
 /*=============== send email ===============*/
 
 // function sendEmail(){
-//   var name = document.getElementById('user_name').value
-//   var email = document.getElementById("user_email").value;
-//   var subject = document.getElementById("user_subject").value;
-//   var msg = document.getElementById("user_msg").value;
+  var contactForm = document.getElementById('contact__content');
+  var nameInput = document.getElementById('user_name');
+  var emailInput = document.getElementById("user_email");
+  var messageInput = document.getElementById("user_msg");
+  var submitBtn = document.getElementById("submitBtn");
+
+    const publicKey = "1GE7b8grlr_mc462u";
+    const serviceID = "service_xu258ke";
+    const templateID = "template_twl2cs4";
+
+    emailjs.init(publicKey)
+
+
+    contactForm.addEventListener("submit",e=> {
+      e.preventDefault()
+      submitBtn.innerText = "Just A Moment..."
+
+      const inputFields = {
+        name:nameInput.value,
+        email: emailInput.value,
+        message: messageInput.value
+      }
+
+      emailjs.send(serviceID,templateID,inputFields)
+        .then(() => {
+            submitBtn.innerText = "Message Sent Successfully"
+            setTimeout(() => {
+              submitBtn.innerText = "Send Message"
+              
+            },3000)
+            nameInput.value = "";
+            emailInput.value = "";
+            messageInput.value = "";
+        },(error) => {
+          console.log(error)
+          submitBtn.innerText = "SomeThing went wrong"
+        })
+
+    })
+
+
+
+
+
+
+
+
+
+
+  //   var subject = document.getElementById("user_subject").value;
 //   var body = `name: ${name} <br/> email: ${email} <br/> subject: ${subject} <br/> message: ${msg} `;
 
 //   // Email.send({
